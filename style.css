@@ -48,6 +48,26 @@ a{
     cursor: pointer;
 }
 
+button{
+    cursor: pointer;
+}
+
+.colored-text{
+    color: #ff914d;
+}
+
+h1{
+    font-size: 3rem;
+    color: #1A202C;
+    margin-bottom: 2rem;
+}
+
+p{
+    font-size: 1.125rem;
+    margin: 2rem 0;
+    color: #242424;
+}
+
 /* NAVIGATION */
 
 .nav__logo--name{
@@ -68,7 +88,7 @@ a{
 
 .nav__link, .nav__links--primary{
     margin: 0 24px;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .nav__links--primary{
@@ -79,9 +99,8 @@ a{
     background-color: #ff914d;
     color: white;
     border-radius: 200px;
-    padding: 12px 32px;
+    padding: 0.75rem 1.5rem;
     max-width: 200px;
-    /* font-size: 14px; */
 }
 
 
@@ -108,4 +127,51 @@ header{
 .header__figure--img{
     width: 100%;
     max-width: 32rem;
+}
+
+.header__form{
+    position: relative;
+}
+
+.header__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 1px;
+    bottom: 0;
+    background-color: #ff914d;
+    color: white;
+    font-size: 100%;
+    font-weight: 700;
+    width: 10rem;
+    line-height: 1;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 200px;
+    border: none;
+}
+
+.header__input{
+    width: 100%;
+    border-radius: 200px;
+    padding: 1.25rem;
+    font-size: 100%;
+    padding-right: 11rem;
+}
+
+.header__customer-img--para{
+    margin: 0.5rem 0 0 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.header__customer-img, .header__customer-img--para{
+    width: 100%;
+    opacity: 0.5;
+}
+
+.header__customer-img--wrapper{
+    margin-top: 5rem;
 }
