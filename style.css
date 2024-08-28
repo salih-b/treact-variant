@@ -27,7 +27,7 @@
 }
 
 #landing{
-    padding:2rem;
+    padding:1rem;
     height: 100vh;
 }
 
@@ -36,6 +36,10 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+}
+
+section{
+    padding: 1rem 0;
 }
 
 ul{
@@ -59,7 +63,6 @@ button{
 h1{
     font-size: 3rem;
     color: #1A202C;
-    margin-bottom: 2rem;
 }
 
 p{
@@ -175,3 +178,63 @@ header{
 .header__customer-img--wrapper{
     margin-top: 5rem;
 }
+
+/* SECTION DESCRIPTIONS */
+
+.section__description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section__label{
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section__description--para{
+    max-width: 45%;
+    color: rgb(124 139 161);
+}
+
+/* FEATURES */
+
+.features__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature{
+    width: calc(100% / 3);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 2rem 0.5rem;
+}
+
+.feature__icon{
+    padding: 1.25rem;
+    border: #e2e8f0 1px solid;
+    border-radius: 100%;
+}
+
+.feature__description{
+    margin-left: 1.25rem;
+}
+
+.feature__description--title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.feature__description--para{
+    font-weight: 500;
+    line-height: 2;
+    color: rgb(124 139 161);
+}
+
+
