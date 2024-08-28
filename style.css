@@ -9,6 +9,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .nav__logo{
     max-width: 40px;
     width: 100%;
@@ -20,6 +24,12 @@
     display: flex;
 }
 
+.container-column{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .row{
     width: 100%;
     max-width: 1200px;
@@ -27,7 +37,6 @@
 }
 
 #landing{
-    padding:1rem;
     height: 100vh;
     overflow: hidden;
 }
@@ -39,8 +48,12 @@ nav{
     height: 10vh;
 }
 
+footer{
+    background-color: #ff914d;
+}
+
 section{
-    padding: 1rem 0;
+    margin: 1.5rem;
     overflow-x: hidden;
 }
 
@@ -158,6 +171,21 @@ p{
     border-radius: 200px;
     border: none;
 }
+
+.section__description--para-short{
+    width: 45%;
+}
+
+.section__content--full-width{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+
 
 /* HEADER */
 
@@ -348,3 +376,190 @@ header{
     border-radius: 100%;
     margin-right: 1rem;
 }
+
+/* PRICING  */
+
+.plans{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(255, 145, 77, 0.5); */
+    box-shadow: 0px 1px 3px 0;
+    border: rgb(226, 232, 240) 1px solid;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    margin-right: 2rem;
+    margin-top: 4rem;
+    position: relative;
+}
+
+.plan-business{
+    background-image: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.pricing__drama-line{
+    /* height: 1rem; */
+    width: calc(100% + 4rem);
+    color: rgb(226, 232, 240);
+
+}
+
+.plan__duration{
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.plan__price{
+    padding: 1rem 0;
+    font-size: 3rem;
+}
+
+.plan__heading, .plan__details{
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.plan__btn{
+    width: 75%;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.plan__btn--personal{
+    background-image: linear-gradient(115deg, #ff914d 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__btn--enterprise{
+    background-image: linear-gradient(115deg, rgb(129, 230, 217) 0%, #ff914d 100%);
+}
+
+.plan__btn--business{
+    background-color: white;
+    color: rgb(68, 179, 164);
+}
+
+.plan__details--para{
+    margin: 0;
+    margin-top: 1.25rem;
+    font-weight: 500;
+}
+
+.plan__strip{
+    width: 101%;
+    height: 0.5rem;
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.plan__strip--personal{
+    background-image: linear-gradient(115deg, #ff914d 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__strip--enterprise{
+    background-image: linear-gradient(115deg, rgb(129, 230, 217) 0%, #ff914d 100%);
+}
+
+.white-text{
+    color:white;
+}
+
+/* FOOTER */
+
+.links-set{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 5);
+    align-items: center;
+    justify-content: center;
+}
+
+.links__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.links__title{
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.link{
+    color: white;
+    text-align: left;
+    margin: 0.25rem 0;
+}
+
+.social__links{
+    display: flex;
+}
+
+.social__link{
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 100%;
+    margin: 0 1rem;
+    height: 1rem;
+    width: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer__info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo--name{
+    color: white;
+    font-weight: 700;
+}
+
+.footer__breaker{
+    width: 100%;
+    margin: 4rem 0;
+    border-bottom-width: 1px;
+    border-color:#e2e8f0;
+    border-style: solid;
+}
+
+.footer__para{
+    color: #e2e8f0;
+}
+
+
+.footer-container{
+    padding: 5rem 1rem;
+}
+
