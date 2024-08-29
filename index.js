@@ -1,12 +1,10 @@
-function openMenu(){
-    console.log("Open Function accessed!");
-    console.log(document.body.classList += " menu--open");
 
-    console.log(document.body.classList);
+function openMenu(){
+    document.body.classList += " menu--open";
 
 }
 
-function openClose(){
+function closeMenu(){
     console.log("Close Function accessed!");
     document.body.classList.remove("menu--open");
 
