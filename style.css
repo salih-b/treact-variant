@@ -46,6 +46,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+    position: relative;
+    animation: swipe-left 1s ease;
 }
 
 footer{
@@ -65,11 +67,29 @@ a{
     text-decoration: none;
     color: #242424;
     cursor: pointer;
+    transition: all 500ms ease;
 }
+
+a:hover{
+    color: #ff914d;
+}
+
+
 
 button{
     cursor: pointer;
+    transition: all 500ms ease;
 }
+
+button:hover{
+    box-shadow: 0 5px 20px #ff914d;
+}
+
+button:active{
+    box-shadow: 0 5px 20px #864d2a;
+    transform: translateY(1px);
+}
+
 
 .colored-text{
     color: #ff914d;
@@ -87,6 +107,10 @@ p{
 }
 
 /* NAVIGATION */
+
+.nav__btn{
+    border: none;
+}
 
 .nav__logo--name{
     display: flex;
@@ -119,6 +143,10 @@ p{
     border-radius: 200px;
     padding: 0.75rem 1.5rem;
     max-width: 200px;
+}
+
+.nav__link--primary:hover{
+    color:white;
 }
 
 
@@ -250,6 +278,7 @@ header{
     align-items: center;
     margin-top: 24px;
     height: 90vh;
+    animation: swipe-right 1s ease;
 }
 
 .header__content{
@@ -295,6 +324,14 @@ header{
     padding: 1.25rem;
     font-size: 100%;
     padding-right: 11rem;
+    border-style: none;
+    box-shadow: 0 5px 20px #e2e8f0;
+    transition: all 300ms ease;
+}
+
+.header__input:hover{
+    border-style: solid;
+    box-shadow: 0 0px 0px #e2e8f0;
 }
 
 .header__customer-img--para{
@@ -568,6 +605,11 @@ header{
     color: white;
     text-align: left;
     margin: 0.25rem 0;
+    transition: all 1s ease;
+}
+
+.link:hover{
+    color: #1A202C;
 }
 
 .social__links{
@@ -584,6 +626,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 1s ease;
+}
+
+.social__link:hover{
+    box-shadow: 0 1PX 5PX black;
 }
 
 
@@ -597,6 +644,12 @@ header{
 .footer__logo--name{
     color: white;
     font-weight: 700;
+    transition: all 1s ease;
+}
+
+.footer__logo--name:hover{
+    /* opacity: .7; */
+    color: #f0bfa1;
 }
 
 .footer__breaker{
@@ -827,5 +880,40 @@ header{
 
     .svg__dots--quality {
         bottom: 5%;
+    }
+}
+
+/* ANIMATIONS */
+
+/* ON -- SCROLL */
+
+.animate__right-swipe--active{
+    animation: swipe-right 1s ease;
+}
+
+.animate__left-swipe--active{
+    animation: swipe-left 1s ease;
+}
+/* -- */
+
+@keyframes swipe-left {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes swipe-right {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
     }
 }
