@@ -570,6 +570,41 @@ header{
     color:white;
 }
 
+
+/* CONTACT US */
+
+.container__contact-us{
+    background-color: #ff914d;
+    text-align: center;
+    border-radius: 20PX;
+}
+
+.section__title--contact-us{
+    max-width: 75%;
+}
+
+.contact-us__btns{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section__btn--white-border{
+    border: white thin solid;
+}
+
+.section__btn--white-border:hover, .section__btn--contact-us:hover{
+    box-shadow: 0 5px 10px white;
+}
+
+.section__btn--contact-us{
+    background-color: rgb(129, 230, 217);
+}
+
+
 /* FOOTER */
 
 .links-set{
@@ -901,6 +936,11 @@ header{
 
     .svg__dots--quality {
         bottom: 5%;
+    }
+
+    .container__contact-us {
+        flex-direction: column;
+        /* padding: 4.5rem 0; */
     }
 }
 
