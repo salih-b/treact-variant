@@ -575,6 +575,11 @@ header{
     max-width: 1rem;
 }
 
+.testimonials__rating{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
 /* CONTACT US */
 
 .container__contact-us{
