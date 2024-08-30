@@ -22,6 +22,7 @@ html{
 
 .container{
     display: flex;
+    padding: 8.5rem 0;
 }
 
 .container-column{
@@ -671,6 +672,10 @@ header{
 
 @media (max-width:1100px) {
 
+    #landing{
+        height: auto;
+    }
+
     .section__title, .header__title{
         font-size: 2.5rem;
     }
@@ -679,6 +684,7 @@ header{
         flex-direction: column;
         align-items: center;
         justify-content: normal;
+        height: 100%;
     }
 
     .header__content{
@@ -690,6 +696,21 @@ header{
 
     .feature {
         width: 40%;
+    }
+
+    .feature__description--para {
+        width: 100%;
+        max-width: 75%;
+    }
+
+    .feature__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing__drama-line{
+        width: 100%;
     }
 
     .svg__dots{
@@ -831,7 +852,7 @@ header{
 
     .container{
         flex-direction: column-reverse;
-        margin: 4.5rem 0;
+        padding: 4.5rem 0;
     }
 
     .steps-container{
