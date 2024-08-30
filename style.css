@@ -570,6 +570,10 @@ header{
     color:white;
 }
 
+/* TESTIMONIALS */
+.testimonials__rating--star{
+    max-width: 1rem;
+}
 
 /* CONTACT US */
 
